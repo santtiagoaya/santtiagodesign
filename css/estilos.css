@@ -165,13 +165,14 @@ main .letrero {
 
 /* ------------------------------Fotter---------------------------------*/
 
-p{
+.fot{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color:#ffffff;
     text-align: center;
     align-content: flex-start;
-    margin:20px;
+    margin-bottom: 40px;
+
 }
 
 
