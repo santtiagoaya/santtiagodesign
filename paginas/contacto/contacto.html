@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosportafolio.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flexboxgrid.css">
+    
     <link rel="shortcut icon" href="img/logoicon.png" type="image/x-icon">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
     
     <title>Contacto</title>
 </head>
-<body>
+<body class="">
     <header>
         <div class="contenedor">
             <img class="logo" src="img/logo.png" alt="logo">
@@ -25,3 +31,88 @@
         </div>
        
     </header>
+<div class="g">
+    <h1>Gracias por Visitarnos</h1>
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">Nombres</label>
+            <input type="text" class="form-control" id="validationCustom01" value="  " required>
+            <div class="valid-feedback">
+              Se ve bien!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Apellidos</label>
+            <input type="text" class="form-control" id="validationCustom02" value="  " required>
+            <div class="valid-feedback">
+            Se ve bien!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-5 mb-3">
+            <label for="validationCustom03">Correo electronico</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Proporcione un correo electrónico válido.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom04">Tipo de Trabajo</label>
+            <select class="custom-select" id="validationCustom04" required>
+              <option selected disabled value="">Escoger...</option>
+              <option>Edicion de Video</option>
+              <option>Ilustracion digital</option>
+              <option>Pagina Web</option>
+              <option>Creacion de marca</option>
+              <option>Sesion Fotografica</option>
+            </select>
+            <div class="invalid-feedback">
+            Seleccione un trabajo válido.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Celular</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+            Proporcione un numero de celular válido.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepta los términos y condiciones
+            </label>
+            <div class="invalid-feedback">
+                Debes estar de acuerdo antes de enviar.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+</div>     
+    </body>
