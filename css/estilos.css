@@ -153,13 +153,18 @@ main .letrero {
     left: 0px;
     width: 0px;
     height: 110%;
-    background-image: url(../img/PORTADAPRO.png);
+    background-image: url(../img/PORTADAPRO.png) ;
+    max-width:100%;
     transition: all 1s ease;
    background-attachment: local;
+   background-position: center center;
+   
+   background-size: cover;
   }
 .button1:hover:before {
   width: 47%;
   }
+
 
 /* ------------------------------Fotter---------------------------------*/
 
