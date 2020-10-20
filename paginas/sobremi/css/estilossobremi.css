@@ -19,7 +19,7 @@ body::-webkit-scrollbar{
     background-color:#000000;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #7b7b7b;
+    background-color: #424242;
     border-radius: 40px;
 }
 
@@ -92,11 +92,11 @@ main .img-perfil{
     
 }
 .letrero { 
-    display: flex; 
+     
     flex-wrap: wrap;
     margin: auto; 
     align-items: center; 
-    text-align: left; 
+    padding-left: 25px;
     
     
     
@@ -106,7 +106,7 @@ main .img-perfil{
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight:1000 ;
-    font-size: 3rem;
+    font-size: 3.5rem;
     
     
 }
@@ -151,7 +151,7 @@ main .img-perfil{
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -40px;
+    bottom: -10px;
     background-color: #0400ff;
     border-radius: 15px;
     
@@ -164,11 +164,11 @@ main .img-perfil{
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
+/* ------------------habilidades blandas------------------------*/
 .skills{
     padding: 5px;
     width:500px;
-    margin: 90px 50px;
+    margin: 90px 40px;
     color: #ffffff;
 }
 
@@ -203,25 +203,35 @@ main .img-perfil{
 
 .creatividad{
     width: 90%;
-    animation: html 10s;
+    animation: crea 10s;
 }
 
 .equipo{
-    width: 20%;
-    animation: ee 10s;
+    width: 80%;
+    animation: equi 10s;
 }
 
-.honestidad{
-    width: 70%;
-    animation: hnt 10s;
+.innovacion{
+    width: 90%;
+    animation: inno 10s;
 }
 
-.responsabilidad{
-    width: 50%;
-    animation: res 10s;
+.liderazgo{
+    width: 85%;
+    animation: lide 10s;
 }
 
-@keyframes html {
+.productividad{
+    width: 82%;
+    animation: produ 10s;
+}
+
+.fluidez{
+    width: 75%;
+    animation: flu 10s;
+}
+
+@keyframes crea {
     0%{
         width: 0%;
     }
@@ -230,33 +240,51 @@ main .img-perfil{
     }
 }
 
-@keyframes ee {
+@keyframes equi {
     0%{
         width: 0%;
     }
     100%{
-        width: 20%;
+        width: 80%;
     }
 }
 
-@keyframes hnt {
+@keyframes inno {
     0%{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 90%;
     }
 }
 
-@keyframes res {
+@keyframes lide {
     0%{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 85%;
+    }
+}
+@keyframes produ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
     }
 }
 
+@keyframes flu {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/**/
 .iconos1{
     max-width:6% ;
 }
@@ -268,7 +296,90 @@ main .img-perfil{
 .skills h3  {
      margin-bottom:5px;
 }
-/*----------------------- HABILIDADES TECNICAS----------------------*/
+/*----------------------- HABILIDADES TECNICAS ----------------------*/
+.ilustrador{
+    width: 86%;
+    animation: ilus 10s;
+}
+
+.premier{
+    width: 90%;
+    animation: prem 10s;
+}
+
+.photo{
+    width: 80%;
+    animation: photo 10s;
+}
+
+.html{
+    width: 72%;
+    animation: html 10s;
+}
+
+.css{
+    width:72%;
+    animation: css 10s;
+}
+
+.office{
+    width: 90%;
+    animation: off 10s;
+}
+
+@keyframes ilus {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 86%;
+    }
+}
+
+@keyframes prem {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes photo {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes off {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
 
 
 /*------------ Formacion academica ------------*/
@@ -282,7 +393,7 @@ main .img-perfil{
     justify-content: center;
     align-items: center; 
     font-weight: 900;  
-    background-color: #0400ff18;  
+    background-color: #0400ff00;  
 }
   
 .formacion{
@@ -357,7 +468,7 @@ main .img-perfil{
     text-align: center;
     justify-content: center;
     border-radius: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1.3rem 2rem;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
