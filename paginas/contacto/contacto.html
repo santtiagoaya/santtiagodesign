@@ -11,6 +11,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
     
@@ -18,7 +22,7 @@
 </head>
 <body class="">
     <header>
-        <div class="contenedor">
+        <div class="contenedor animate__animated animate__fadeInDown animate__slow	5s">
             <img class="logo" src="img/logo.png" alt="logo">
             <nav>
                 <a href="../../index.html" class="activo">Inicio</a>
@@ -31,88 +35,130 @@
         </div>
        
     </header>
-<div class="g">
-    <h1>Gracias por Visitarnos</h1>
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom01">Nombres</label>
-            <input type="text" class="form-control" id="validationCustom01" value="  " required>
-            <div class="valid-feedback">
-              Se ve bien!
-            </div>
+    <div class="g">
+      <div class="row gg">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 form">
+          <h1 class="animate__animated animate__fadeInLeft animate__slow	5s">¡Gracias por Visitarme!</h1>
+          <form class="needs-validation animate__animated animate__backInRight animate__slow	5s" novalidate>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom01">Nombres</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="  " required>
+                  <div class="valid-feedback">
+                    Se ve bien!
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom02">Apellidos</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="  " required>
+                  <div class="valid-feedback">
+                  Se ve bien!
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-5 mb-3">
+                  <label for="validationCustom03">Correo electronico</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                      Proporcione un correo electrónico válido.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom04">Tipo de Trabajo</label>
+                  <select class="custom-select" id="validationCustom04" required>
+                    <option selected disabled value="">Escoger...</option>
+                    <option>Edicion de Video</option>
+                    <option>Ilustracion digital</option>
+                    <option>Pagina Web</option>
+                    <option>Creacion de marca</option>
+                    <option>Sesion Fotografica</option>
+                  </select>
+                  <div class="invalid-feedback">
+                  Seleccione un trabajo válido.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom05">Celular</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                  Proporcione un numero de celular válido.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepta los términos y condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                      Debes estar de acuerdo antes de enviar.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+            
+            <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+
           </div>
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom02">Apellidos</label>
-            <input type="text" class="form-control" id="validationCustom02" value="  " required>
-            <div class="valid-feedback">
-            Se ve bien!
-            </div>
-          </div>
+
+        <div class="col-md-2 ser">
+
+
         </div>
-        <div class="form-row">
-          <div class="col-md-5 mb-3">
-            <label for="validationCustom03">Correo electronico</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-                Proporcione un correo electrónico válido.
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom04">Tipo de Trabajo</label>
-            <select class="custom-select" id="validationCustom04" required>
-              <option selected disabled value="">Escoger...</option>
-              <option>Edicion de Video</option>
-              <option>Ilustracion digital</option>
-              <option>Pagina Web</option>
-              <option>Creacion de marca</option>
-              <option>Sesion Fotografica</option>
-            </select>
-            <div class="invalid-feedback">
-            Seleccione un trabajo válido.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Celular</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-            Proporcione un numero de celular válido.
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Acepta los términos y condiciones
-            </label>
-            <div class="invalid-feedback">
-                Debes estar de acuerdo antes de enviar.
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-      </form>
+
+
+      </div>
+
+
+    </div>
+
       
-      <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-      </script>
-</div>     
-    </body>
+</body>
+
+
+  <footer>
+      <div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://wa.me/573204190990?text=Hola%20necesito%20informacion%20sobre" target="_blank" class="twitter">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+				</div>
+				
+				<div class="contenedor-icono">
+					<a href="https://www.instagram.com/sdesignco/?hl=es-la" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+      </div>
+      
+
+      <p class="fot">&#169; Una Vida Electrizante </p>
+  </footer>
+  <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+
+</html>
