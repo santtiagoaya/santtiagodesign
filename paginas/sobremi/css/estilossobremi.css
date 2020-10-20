@@ -7,11 +7,23 @@
 }
 
 body{
-    background: rgb(5, 5, 5);
+    background: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    padding: 40px;
+    overflow-x: hidden;
 }
+
+body::-webkit-scrollbar{
+    width: 15px;
+    height: 10px;
+    background-color:#000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #7b7b7b;
+    border-radius: 40px;
+}
+
+
 /* --------------------------------------------------  header*/
 .contenedor{
     width: 90%;
@@ -63,7 +75,7 @@ header nav a.activo {
 
 .portada{
     height: auto;
-    background: rgba(95, 158, 160, 0);
+    
    
 }
  main{
@@ -73,16 +85,19 @@ header nav a.activo {
 }
 
 main .img-perfil{
-    max-width: 90%;
-    border-radius: 30px;
+    display: flex;
+    max-width: 120%;
     justify-content: center;
-    align-items: center;
-    margin-left: 90px;
+    align-content: center;
     
 }
-.letrero {  
+.letrero { 
+    display: flex; 
     flex-wrap: wrap;
-    margin: auto;  
+    margin: auto; 
+    align-items: center; 
+    text-align: left; 
+    
     
     
 }
@@ -114,25 +129,44 @@ main .img-perfil{
 
 .habild{
     height: auto;
-    background: rgb(5, 5, 5);
+    background: rgba(175, 58, 58, 0);
+}
+
+.habild h1{
+
+    margin-bottom: 50px;
+    
 }
 .habildletrero{
+    position: relative;
     height: auto;
-    background: rgba(0, 17, 248, 0);
     text-align: center;
    
+}
+.habildletrero::after{
+    position: absolute;
+    content:"";
+    width: 10rem;
+    height: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -40px;
+    background-color: #0400ff;
+    border-radius: 15px;
+    
 }
 .habildletrero h1{
     color:#ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
-    
-    margin-top: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .skills{
-    padding: 50px;
+    padding: 5px;
     width:500px;
     margin: 90px 50px;
     color: #ffffff;
@@ -238,35 +272,55 @@ main .img-perfil{
 
 
 /*------------ Formacion academica ------------*/
-
+.academica{
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
 .ft{
     display: flex;
-    background: rgb(4, 0, 255);
     height: 600px;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    font-weight: 900;  
+    background-color: #0400ff18;  
 }
+  
 .formacion{
+    position: relative;
+    color:#ffffff;
     display: flex;
-    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: 900;
+    
 
+}
+.formacion::after{
+    position: absolute;
+    content:"";
+    width: 10rem;
+    height: 15px;
+    left: 0;
+    right: auto;
+    margin: auto;
+    bottom: -60px;
+    background-color: #0400ff;
+    border-radius: 15px;
 }
 
 .cajacont{
     display: flex;
     width: 100%;    
     height: 600px;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(231, 66, 66, 0);
     align-items: center; 
     text-align: left;
+   
       
 }
 
 .contenido{
-  padding: 8rem;
+  padding: 7rem;
   color:#ffffff;
   
 
@@ -279,7 +333,7 @@ main .img-perfil{
 
 .contenido p{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
@@ -309,8 +363,12 @@ main .img-perfil{
     font-family: 'Montserrat', sans-serif;
     font-weight: 950;
     border: none;
-   
-    
+    cursor: pointer; 
+}
+
+.cvdowland:hover{
+    background-color: #0400ff;
+    color: #ffffff;
 }
 
 
