@@ -554,9 +554,22 @@ main .img-perfil{
     margin:0px;
 
 }
+.academica{
+    display: block;
+    margin: auto;
+}
+
+.habild{
+    display: block;
+    margin: auto;
+}
 .skills{
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     padding: 20px;
-    padding-right: 190px;
+    padding-right: 40px;
     
 }
 .iconos1{
@@ -566,30 +579,32 @@ main .img-perfil{
 
 .skills h3{
     font-size:20px;
-    height: 60%;
+    height: 90%;
 }
 .bar{
     height: 9px;
-    width: 70%;
+    width:78%;
     
 }
-
+.cajacont{
+    padding-right: 100px;
+}
 .contenido{
     padding: 3rem;
-    padding-right: 6rem;
+   
     color:#ffffff;
 
   }
-  .contenido h1{
+.contenido h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size:2.1rem ;
+    font-size:1.9rem ;
 }
 
 .contenido p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.7rem;
 }
 .ft{
     
