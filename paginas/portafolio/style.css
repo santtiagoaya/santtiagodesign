@@ -276,4 +276,8 @@ footer .creado-por a:hover {text-decoration: underline;}
 	header .barra-busqueda {
 		width: 100%;
 	}
+
+	header .categorias a{
+		font-size:15px;
+	}
 }
