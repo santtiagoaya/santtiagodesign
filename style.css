@@ -1,0 +1,175 @@
+:root{
+    
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color:#000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 4, 255);
+    border-radius: 40px;
+}
+
+
+
+/* -------------- header-----------------------*/
+.contenedor{
+    width: 90%;
+    margin:auto;
+
+}
+
+header{
+    padding: 37px 0;
+    
+}
+header .contactoradius{
+    background-color: rgb(0, 4, 255);
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+}
+header .contenedor{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+   max-width: 100%;
+
+}
+
+header nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+header nav a:hover,
+header nav a.activo {
+    color: rgb(255, 255, 255);
+}
+.info{
+    color: rgba(170, 170, 170, 0);
+    text-decoration: none; 
+}
+
+ /*------------------Main--------------*/
+main{
+    padding: 5px;
+    
+
+}
+
+main .img-perfil{
+    max-width: 130%;
+    align-content: center;
+    padding-right: 12px;
+       
+}
+
+
+main .letrero {  
+   
+    flex-direction: column;
+    margin: auto;
+    padding-left: 40px;
+    height: 600px;
+    
+    
+    
+    
+}
+
+.san{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 1em; 
+    margin-top:140px;
+    
+}
+
+.des{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    
+    
+}
+
+
+
+/*----------------------------------boton productor multimedia--------------------------------*/
+.button1{
+    
+    background-color: rgb(0, 4, 255);
+    border-radius: 30px;
+    font-size: 23px;
+    padding: 1rem 2.5rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    margin-left: 4px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline:none;
+    
+}
+
+.button1:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 110%;
+    background-image: url(./img/PORTADAPRO.png) ;
+    transition: all 1s ease;
+    background-attachment: local;
+    background-position: none center;
+    background-size: cover;
+  }
+.button1:hover:before {
+  width: 47%;
+  }
+
+
+/* ------------------------------Fotter---------------------------------*/
+
+.fot{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+    text-align: center;
+    align-content: flex-start;
+    margin-bottom: 40px;
+
+}
+
+

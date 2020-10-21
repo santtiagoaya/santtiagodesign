@@ -9,6 +9,7 @@
     
     <link rel="shortcut icon" href="img/logoicon.png" type="image/x-icon">
 
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -22,16 +23,36 @@
 </head>
 <body class="">
     <header>
-        <div class="contenedor animate__animated animate__fadeInDown animate__slow	5s">
-            <img class="logo" src="img/logo.png" alt="logo">
-            <nav>
-                <a href="../../index.html" class="activo">Inicio</a>
-                <a href="../sobremi/sobremi.html">Sobre mi</a>
-                <a href="../portafolio/index.html">Portafolio</a>
-                <a href="contacto.html" class="contactoradius">Contacto</a>
-            </nav>
-
-            <a class="info" href="#">.</a>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="50" style="margin-left: 30px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto w-100 justify-content-center animate__animated animate__fadeInDown animate__slow	6s">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sobremi/sobremi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../portafolio/index.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="../contacto/contacto.html" style="background-color: rgb(0, 4, 255);
+              border-radius: 30px;
+              font-size: 1rem;
+              padding: 1rem 1rem;
+              color: #ffffff;
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 700;
+              border: none;">Contacto </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    
         </div>
        
     </header>
@@ -135,7 +156,8 @@
 
     </div>
 
-      
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 </body>
 
 
