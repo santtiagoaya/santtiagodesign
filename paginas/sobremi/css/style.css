@@ -555,8 +555,8 @@ main .img-perfil{
 
 }
 .skills{
-    padding: 30px;
-    padding-right: 160px;
+    padding: 20px;
+    padding-right: 190px;
     
 }
 .iconos1{
@@ -570,7 +570,7 @@ main .img-perfil{
 }
 .bar{
     height: 9px;
-    width: auto;
+    width: 70%;
     
 }
 
