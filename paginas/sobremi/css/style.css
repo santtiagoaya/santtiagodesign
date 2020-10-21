@@ -289,7 +289,7 @@ main .img-perfil{
 
 /**/
 .iconos1{
-    max-width:6% ;
+    max-width:8% ;
 }
 
 .skills li{
@@ -555,7 +555,13 @@ main .img-perfil{
 
 }
 .skills{
-    padding: 60px;
+    padding: 30px;
+    padding-right: 160px;
+    
+}
+.iconos1{
+    max-width:9% ;
+   
 }
 
 .skills h3{
@@ -570,6 +576,7 @@ main .img-perfil{
 
 .contenido{
     padding: 3rem;
+    padding-right: 6rem;
     color:#ffffff;
 
   }
