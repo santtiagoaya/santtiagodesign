@@ -168,7 +168,10 @@ main .img-perfil{
 .skills{
     padding: 5px;
     width:500px;
-    margin: 90px 40px;
+    display: block;
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     color: #ffffff;
 }
 
@@ -180,7 +183,7 @@ main .img-perfil{
 }
 
 .skills li img{
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .bar{
@@ -546,14 +549,13 @@ main .img-perfil{
 
 .skills1{
     
-    font-size:30px;
+    font-size:25px;
     padding: 0px;
     margin:0px;
 
 }
 .skills{
-        justify-content: center;
-        align-items: center;
+    padding: 60px;
 }
 
 .skills h3{
@@ -562,11 +564,12 @@ main .img-perfil{
 }
 .bar{
     height: 9px;
-    width: 60%;
+    width: auto;
+    
 }
 
 .contenido{
-    padding: 3.6rem;
+    padding: 3rem;
     color:#ffffff;
 
   }
